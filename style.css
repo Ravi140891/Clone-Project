@@ -249,57 +249,44 @@ body{
 .nav_button{
     position: absolute;
 }
-.corousel_btn{
-    position: relative;
-    border-radius: 0px 4px 4px 0px;
-    font-size: 40px;
-    background: hsla(0, 0%, 100%, .98);
-    width: 47px;
-    height: 104px;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 5px 0 rgb(0, 0, 0 /11%);
-    cursor: pointer;
-    top: 90px;
-}
-.prev_btn{
-    left: 0;
-    margin-left: 5.5%;
-}
-.next_prev{
-    font-weight: bold;
-}
-.corousel_2{
-    border-radius: 4px 0 0 4px;
-}
-.next_btn{
-    right: 0;
-    margin-right: 5.5%;
-}
-.corousel_item_container{
+.middle-row{
     max-width: 1500px;
     min-width: 978px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     padding-top: 10px;
     margin-left: 10%;
     margin-right: 10%;
 }
-.corousel_items{
-    width: 100%;
-    overflow: hidden;
-}
-.corousel_image{
-    min-width: 100%;
-    height: 280px;
-    padding: 8px;
-}
-.middle_row{
-    margin: 0 5%
-}
-.slider_image{
+.slider{
     width: 100%;
     display: flex;
+    overflow: hidden;
 }
-.slider_image img{
-    max-width: 100%;
+.slider img{
+    width: 100%;
+}
+
+.slider_image{
+    display: flex;
+}
+.btn-container{
+    margin: auto;
+    width: 10px;
+}
+.btn{
+    padding: 35px 10px;
+    background-color: white;
+    font-size: 30px;
+    border: none;
+    border-radius: 5px;
+}
+.prev{
+    position: relative;
+    z-index: 5;
+    cursor: pointer;
+}
+.next{
+    position: relative;
+    right: 28px;
+    cursor: pointer;
 }
